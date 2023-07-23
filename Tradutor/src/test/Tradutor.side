@@ -1,0 +1,182 @@
+{
+  "id": "31338130-dae3-4e47-aa64-8798e85066ab",
+  "version": "2.0",
+  "name": "Tradutor",
+  "url": "http://localhost:45125/",
+  "tests": [{
+    "id": "8a7d096b-5a08-4c46-b326-7c5d82155c80",
+    "name": "TestTraduzirPalavraIngles",
+    "commands": [{
+      "id": "87056a67-25d0-4c5c-b304-171096f0cf44",
+      "comment": "",
+      "command": "open",
+      "target": "/Tradutor/traducao.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51645d1d-dc10-43da-a1e2-0db1b16c9304",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "584x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2d85496-0b11-47c7-90ef-551a560f87bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f133d1-fc09-40c3-bd13-fc6f0f931e5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "house"
+    }, {
+      "id": "701a385d-38a6-426b-bb6d-a91c97210c36",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Traduzir']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5a9212ae-b0f3-4cf4-9690-2b4bca2d036c",
+    "name": "TestTraduzirPalavraPortugues",
+    "commands": [{
+      "id": "a10ddb1f-91c8-4209-8623-5b625d8e180a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:45125/Tradutor/traducao.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e55bca24-dd2c-4d4d-9ff5-e4d5cd78e217",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "584x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdb97b9f-d1e1-4461-b346-4c0752d48db1",
+      "comment": "",
+      "command": "click",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3d9aa1-8cbb-4acd-9825-1d2873ca49b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "livro"
+    }, {
+      "id": "93714354-f591-4284-ad34-8ae5831e9625",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Traduzir']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cd756cc2-b69f-4d55-91da-f3a784d30ea6",
+    "name": "TestTraduzirPalavraInexistente",
+    "commands": [{
+      "id": "b41080cf-6462-4414-85a7-97f6781ed320",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:45125/Tradutor/traducao.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "493119ec-87af-4262-b5e4-463a0d3cd594",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "584x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1c380bc-327e-4aaa-8c0f-a032ee4936e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5038f7fc-6c2b-498c-967f-979dde9997e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Azenka"
+    }, {
+      "id": "8d5fe801-9be9-459b-805c-44fa1b2b7256",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Traduzir']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7b90156f-898e-44de-b5ab-3c6e949cc782",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8a7d096b-5a08-4c46-b326-7c5d82155c80"]
+  }],
+  "urls": ["http://localhost:45125/"],
+  "plugins": []
+}

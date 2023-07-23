@@ -1,0 +1,170 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2023-07-23T10:31:10-03:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 8
+
+Apache Licensed: 1
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+7 Unknown Licenses
+
+*****************************************************
+
+Files with unapproved licenses:
+
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/resources/META-INF/persistence.xml
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/resources/JakartaEE10Resource.java
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/JakartaRestConfiguration.java
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/beans.xml
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/glassfish-web.xml
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/web.xml
+  /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/index.html
+
+*****************************************************
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    /home/webert/www/cursos/ita-java/mavenproject1/pom.xml
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/resources/META-INF/persistence.xml
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/resources/JakartaEE10Resource.java
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/JakartaRestConfiguration.java
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/beans.xml
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/glassfish-web.xml
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/web.xml
+ !????? /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/index.html
+ 
+*****************************************************
+
+ Printing headers for text files without a valid license header...
+ 
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/resources/META-INF/persistence.xml
+=====================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <!-- Define Persistence Unit -->
+    <persistence-unit name="my_persistence_unit">
+        
+    </persistence-unit>
+</persistence>
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/resources/JakartaEE10Resource.java
+=====================================================
+package com.redewe2m.mavenproject1.resources;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
+
+/**
+ *
+ * @author 
+ */
+@Path("jakartaee10")
+public class JakartaEE10Resource {
+    
+    @GET
+    public Response ping(){
+        return Response
+                .ok("ping Jakarta EE")
+                .build();
+    }
+}
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/java/com/redewe2m/mavenproject1/JakartaRestConfiguration.java
+=====================================================
+package com.redewe2m.mavenproject1;
+
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
+
+/**
+ * Configures Jakarta RESTful Web Services for the application.
+ * @author Juneau
+ */
+@ApplicationPath("resources")
+public class JakartaRestConfiguration extends Application {
+    
+}
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/beans.xml
+=====================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_4_0.xsd"
+       bean-discovery-mode="all">
+</beans>
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/glassfish-web.xml
+=====================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+    
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app error-url="">
+  <class-loader delegate="true"/>
+  <jsp-config>
+    <property name="keepgenerated" value="true">
+      <description>Keep a copy of the generated servlet class' java code.</description>
+    </property>
+  </jsp-config>
+</glassfish-web-app>
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/WEB-INF/web.xml
+=====================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
+=====================================================
+== File: /home/webert/www/cursos/ita-java/mavenproject1/src/main/webapp/index.html
+=====================================================
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
